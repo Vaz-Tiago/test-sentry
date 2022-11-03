@@ -14,8 +14,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "inlineSources": true,
+    "sourceRoot": "/"
   },
+  "types": ["vite-plugin-sentry/client"],
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

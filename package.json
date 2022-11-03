@@ -5,12 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build && rm -f dist/**/*.js.map",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@sentry/react": "^7.17.3",
+    "@sentry/tracing": "^7.17.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "vite-plugin-sentry": "^1.1.6"
   },
   "devDependencies": {
     "@types/react": "^18.0.22",
